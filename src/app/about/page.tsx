@@ -1,6 +1,28 @@
 import AboutSection from "@/components/about/AboutSection";
 import ImageGallery from "@/components/about/ImageGallery";
+import TeamMember from "@/components/about/TeamMember";
 export default function AboutPage() {
+  const members = [
+    {
+      src: "/images/about/team-shopkeeper.jpg",
+      alt: "团队成员 阿文 - 店主",
+      name: "阿文 - 店主",
+      desc: "热爱旅行与探索，他走过世界各地的咖啡馆，把一路上的灵感带回到这座城市。开这家店，是想创造一个“让生活慢下来”的空间，也希望咖啡能成为人与人之间的桥梁。",
+    },
+    {
+      src: "/images/about/team-barista1.jpg",
+      alt: "团队成员 小夏 - 咖啡师",
+      name: "小夏 - 咖啡师",
+      desc: "热爱旅行与探索，他走过世界各地的咖啡馆，把一路上的灵感带回到这座城市。开这家店，是想创造一个“让生活慢下来”的空间，也希望咖啡能成为人与人之间的桥梁。",
+    },
+    {
+      src: "/images/about/team-barista2.jpg",
+      alt: "团队成员 阿杰 - 咖啡师",
+      name: "阿杰 - 咖啡师",
+      desc: "痴迷于手冲，对咖啡风味的探索近乎执着。他最喜欢和客人分享不同产区的豆子故事，把一杯咖啡变成一场小型的“味觉旅行”。",
+    },
+  ];
+
   return (
     <>
       <AboutSection
@@ -79,6 +101,8 @@ export default function AboutPage() {
           "环境照片 6",
         ]}
       />
+
+      <TeamMember id="team" title="团队介绍" members={members} />
     </>
   );
 }
