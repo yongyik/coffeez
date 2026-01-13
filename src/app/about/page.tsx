@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about/AboutSection";
+import ImageGallery from "@/components/about/ImageGallery";
 export default function AboutPage() {
   return (
     <>
@@ -56,6 +57,27 @@ export default function AboutPage() {
           src: "/images/about/coffee-shop-team.jpg",
           alt: "我们的咖啡店团队合照",
         }}
+      />
+
+      <ImageGallery
+        id="space"
+        title="空间氛围"
+        src={[
+          "/images/about/environment-1.jpg",
+          "/images/about/environment-2.jpg",
+          "/images/about/environment-3.jpg",
+          "/images/about/environment-4.jpg",
+          "/images/about/environment-5.jpg",
+          "/images/about/environment-6.jpg",
+        ]}
+        alt={[
+          "环境照片 1",
+          "环境照片 2",
+          "环境照片 3",
+          "环境照片 4",
+          "环境照片 5",
+          "环境照片 6",
+        ]}
       />
     </>
   );
