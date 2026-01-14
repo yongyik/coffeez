@@ -1,6 +1,7 @@
 export const menu = [
   {
-    categoryKey: "热饮",
+    categoryKey: "hot",
+    category: "热饮",
     items: [
       {
         name: "美式咖啡",
@@ -30,7 +31,9 @@ export const menu = [
   },
 
   {
-    categoryKey: "冰饮",
+    categoryKey: "cold",
+    category: "冷饮",
+
     items: [
       {
         name: "冰美式",
@@ -60,7 +63,9 @@ export const menu = [
   },
 
   {
-    categoryKey: "特调饮品",
+    categoryKey: "special-drinks",
+    category: "特调饮品",
+
     items: [
       {
         name: "抹茶拿铁",
@@ -82,7 +87,9 @@ export const menu = [
   },
 
   {
-    categoryKey: "甜品",
+    categoryKey: "dessert",
+    category: "甜品",
+    
     items: [
       {
         name: "蓝莓乳酪蛋糕",
