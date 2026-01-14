@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { ReactNode } from "react";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: "My Component Library",
