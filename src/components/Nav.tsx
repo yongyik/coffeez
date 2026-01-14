@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-amber-700 text-amber-50">
+    <nav className=" fixed top-0 left-0 right-0 z-50 transition-colors duration-300 text-amber-50 px-4 py-3 flex items-center justify-between bg-[url('/images/background/bg-1.jpg')] bg-cover bg-center shadow-md">
       <div>
-        <Link href="/">MyApp</Link>
+        <Link href="/">Mycoffee</Link>
       </div>
       <ul className="flex gap-6">
         <li>

@@ -18,8 +18,8 @@ export default function SwiperCard({
   price,
 }: Props) {
   return (
-    <article className="flex flex-row py-6.5 px-9 gap-3 w-full bg-amber-200">
-      <figure className="w-32  relative">
+    <article className="flex flex-row py-6.5 px-9 gap-3 w-full h-54 bg-[url('/images/background/bg-1.jpg')] bg-cover bg-center text-amber-50">
+      <figure className="w-42  relative">
         <Image
           src={src}
           alt={alt}

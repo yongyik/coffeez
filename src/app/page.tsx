@@ -4,13 +4,14 @@ import ImageLinkSection from "@/components/home/ImageLinkSection";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="text-amber-50">
       <Hero
         src="/images/home/hero.jpg"
         alt="桌子和咖啡"
         title="手工烘焙 · 一杯温暖你的咖啡"
         desc="「我们是一家位于市中心的小咖啡馆，精选咖啡豆，用心冲泡每一杯。」"
       />
+      <h2 className="text-3xl text-center p-5">推荐饮品</h2>
       <HomeSwiper />
       <ImageLinkSection
         href="/about#story"

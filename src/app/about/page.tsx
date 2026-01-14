@@ -26,7 +26,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <>
+    <div className="text-amber-100">
       <Banner
         title="一个温暖小屋"
         src="/images/about/header.jpg"
@@ -119,6 +119,6 @@ export default function AboutPage() {
       />
 
       <TeamMember id="team" title="团队介绍" members={members} />
-    </>
+    </div>
   );
 }

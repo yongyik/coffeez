@@ -41,7 +41,7 @@ export default function HomeSwiper() {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        navigation
+        
       >
         {swiperItems.map((i) => (
           <SwiperSlide key={i.name}>

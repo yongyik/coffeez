@@ -27,7 +27,7 @@ export default function MenuCard({
   }
 
   return (
-    <article className="flex flex-row p-5.5 gap-3 w-full bg-amber-200">
+    <article className="flex flex-row p-5.5 gap-3 w-full  ">
       <figure>
         <Image
           src={src}
@@ -59,9 +59,9 @@ export default function MenuCard({
       {showMore && (
         <dialog
           open
-          className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full p-6"
+          className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-77  border-amber-300 border  text-amber-100 flex flex-col gap-3 items-center bg-[url('/images/background/bg-1.jpg')] bg-cover bg-center p-8 rounded-3xl"
         >
-          <div className=" flex flex-col gap-3 items-center bg-amber-500 bg-cover bg-center p-8 rounded-3xl">
+        
             <figure>
               <Image
                 src={src}
@@ -89,7 +89,7 @@ export default function MenuCard({
                 </button>
               </div>
             </section>
-          </div>
+         
         </dialog>
       )}
     </article>
