@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about/AboutSection";
+import Banner from "@/components/about/Banner";
 import ImageGallery from "@/components/about/ImageGallery";
 import SectionNav from "@/components/about/SectionNav";
 import TeamMember from "@/components/about/TeamMember";
@@ -26,6 +27,12 @@ export default function AboutPage() {
 
   return (
     <>
+      <Banner
+        title="一个温暖小屋"
+        src="/images/about/header.jpg"
+        alt="一个手拿着咖啡豆"
+      />
+
       <SectionNav
         links={[
           { href: "#story", label: "我们的故事" },
