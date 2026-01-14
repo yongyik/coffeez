@@ -1,5 +1,6 @@
 import AboutSection from "@/components/about/AboutSection";
 import ImageGallery from "@/components/about/ImageGallery";
+import SectionNav from "@/components/about/SectionNav";
 import TeamMember from "@/components/about/TeamMember";
 export default function AboutPage() {
   const members = [
@@ -25,6 +26,14 @@ export default function AboutPage() {
 
   return (
     <>
+      <SectionNav
+        links={[
+          { href: "#story", label: "我们的故事" },
+          { href: "#space", label: "空间氛围" },
+          { href: "#team", label: "团队介绍" },
+        ]}
+      />
+
       <AboutSection
         id="story"
         title="我们的故事"

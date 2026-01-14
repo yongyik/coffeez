@@ -33,16 +33,15 @@ export default function HomeSwiper() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
-        spaceBetween={5} // slide 之间的间距（单位 px）
-        loop={true} // 开启循环播放（到最后一张后回到第一张）
-        speed={1600} // 切换动画时长（单位 ms）
+        spaceBetween={5}
+        loop={true}
+        speed={1600}
         autoplay={{
-          // 自动播放设置
-          delay: 2500, // 每张停留 2.5 秒
-          disableOnInteraction: false, // 用户操作后是否停止自动播放（false = 不停止）
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        pagination={{ clickable: true }} // 开启分页器（小圆点）
-        navigation // 开启导航按钮（左右箭头）
+        pagination={{ clickable: true }}
+        navigation
       >
         {swiperItems.map((i) => (
           <SwiperSlide key={i.name}>
