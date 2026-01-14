@@ -25,13 +25,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </div>
 
         <div className="relative z-10">
-
-        <Nav />
-        {children}
-        <Footer />
-
-
+          <Nav />
+          {children}
+          <Footer />
         </div>
+
+        <SpeedInsights />
 
 
 
