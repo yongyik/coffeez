@@ -29,7 +29,7 @@ export default function MenuCard({
   }
 
   return (
-    <article className="flex flex-row p-5.5 gap-3 w-full  ">
+    <article className="flex flex-row p-4.5 gap-3 w-full bg-amber-50/10 border border-amber-50/30">
       <figure>
         <Image
           src={src}
@@ -39,7 +39,7 @@ export default function MenuCard({
           className="h-auto"
         />
       </figure>
-      <section className="flex flex-col gap-1 justify-between">
+      <section className="flex flex-col gap-1 justify-between w-full max-w-68">
         <div className="flex flex-col gap-2">
           <h3 className="text-2xl">{name}</h3>
           <p className="text-sm">{description}</p>

@@ -26,12 +26,13 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="text-amber-100">
-      <Banner
+    <div className="text-amber-100 ">
+     <Banner
         title="一个温暖小屋"
         src="/images/about/header.jpg"
         alt="一个手拿着咖啡豆"
       />
+
 
       <SectionNav
         links={[
@@ -41,6 +42,9 @@ export default function AboutPage() {
         ]}
       />
 
+        <div className="lg:px-66">
+
+ 
       <AboutSection
         id="story"
         title="我们的故事"
@@ -119,6 +123,8 @@ export default function AboutPage() {
       />
 
       <TeamMember id="team" title="团队介绍" members={members} />
+</div>
+
     </div>
   );
 }

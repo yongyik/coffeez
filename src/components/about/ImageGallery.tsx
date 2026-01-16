@@ -9,8 +9,8 @@ interface Props {
 
 export default function ImageGallery({ id, title, src, alt }: Props) {
   return (
-    <section id={id}>
-      <h2 className="p-7 text-4xl ">{title}</h2>
+    <section id={id} >
+      <h2 className="p-7 text-4xl lg:text-center lg:text-7xl">{title}</h2>
       {src.map((src, i) => (
         <div
           key={i}

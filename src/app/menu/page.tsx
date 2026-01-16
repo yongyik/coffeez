@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function MenuPage() {
   return (
-    <div className="flex flex-col gap-3 p-6 pt-16  ">
+    <div className="flex flex-col gap-3 p-6 pt-16  lg:px-88">
       <motion.nav
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -25,12 +25,16 @@ export default function MenuPage() {
         ))}
       </motion.nav>
 
-      <section className="flex flex-col gap-5   text-amber-50">
+      <section
+        className="flex flex-col gap-5   text-amber-50
+      
+      "
+      >
         {menu.map((c) => (
           <motion.div
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true,amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 1.3 }}
             id={c.categoryKey}
             key={c.categoryKey}
@@ -38,7 +42,7 @@ export default function MenuPage() {
           >
             <h2 className="text-3xl">{c.category}</h2>
 
-            <ul className="flex flex-col gap-2 py-3 ">
+            <ul className=" gap-2 py-3  grid grid-cols-1 md:grid-cols-2 ">
               {c.items.map((a) => (
                 <li key={`${c.categoryKey}-${a.name}`}>
                   <MenuCard

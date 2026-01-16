@@ -19,7 +19,7 @@ export default function Hero({ src, alt, title, desc }: HeroProps) {
         text-amber-50 flex flex-col gap-1.5"
       >
         <h1 className="text-2xl lg:text-6xl">{title}</h1>
-        <p className="text-sm lg:text-2xl lg:py-5 w-169 h-auto">{desc}</p>
+        <p className="text-sm lg:text-2xl lg:py-5 lg:w-169 h-auto">{desc}</p>
       </div>
     </header>
   );
