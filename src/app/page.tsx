@@ -11,7 +11,7 @@ export default function HomePage() {
         title="手工烘焙 · 一杯温暖你的咖啡"
         desc="「我们是一家位于市中心的小咖啡馆，精选咖啡豆，用心冲泡每一杯。」"
       />
-      <h2 className="text-3xl text-center p-5">推荐饮品</h2>
+      <h2 className="text-3xl text-center p-5 lg:text-6xl lg:p-11">推荐饮品</h2>
       <HomeSwiper />
       <ImageLinkSection
         href="/about#story"

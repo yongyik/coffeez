@@ -21,7 +21,7 @@ export default function ImageGallery({ id, title, src, alt }: Props) {
             alt={alt[i]}
             width={224}
             height={224}
-            className="border-amber-50 border-2 rounded-2xl h-auto"
+            className="border-amber-50 border-2 rounded-2xl h-auto lg:w-99"
           />
         </div>
       ))}

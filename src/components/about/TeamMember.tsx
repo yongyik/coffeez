@@ -18,10 +18,10 @@ export default function TeamMember({ id, title, members }: Props) {
               alt={m.alt}
               width={333}
               height={333}
-              className="w-full"
+              className="w-full max-w-88"
             />
             <h3 className="text-3xl">{m.name}</h3>
-            <p>{m.desc}</p>
+            <p className="max-w-122">{m.desc}</p>
           </li>
         ))}
       </ul>

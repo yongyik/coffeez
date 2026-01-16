@@ -6,16 +6,20 @@ interface HeroProps {
   title: string;
   desc: string;
 }
-export default function Hero({src,alt, title, desc }: HeroProps) {
+export default function Hero({ src, alt, title, desc }: HeroProps) {
   return (
-
-    <header className="relative w-full h-70">
-      
+    <header className="relative w-full h-70 lg:h-176">
       <Image src={src} alt={alt} fill className="object-cover" priority />
       <div className="absolute inset-0 bg-black/40" />
-      <div className="absolute top-14 left-7 text-amber-50 flex flex-col gap-1.5">
-        <h1 className="text-2xl">{title}</h1>
-        <p className="text-sm w-69 h-auto">{desc}</p>
+      <div
+        className="
+          absolute
+          top-14 lg:top-24
+          left-7 lg:left-27
+        text-amber-50 flex flex-col gap-1.5"
+      >
+        <h1 className="text-2xl lg:text-6xl">{title}</h1>
+        <p className="text-sm lg:text-2xl lg:py-5 w-169 h-auto">{desc}</p>
       </div>
     </header>
   );

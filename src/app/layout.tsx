@@ -3,41 +3,34 @@ import "../styles/globals.css";
 import { ReactNode } from "react";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
-  title: "My Component Library",
-  description: "Demo for personal components",
+  title: "My coffee",
+  description: "My Coffee - 记录咖啡灵感",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-gray-50 text-gray-900">
+    <html lang="zh">
+      <body>
         <div className="fixed inset-0 z-0">
           <Image
             src="/images/background/bg-all.jpg"
             alt="背景"
             fill
-            className="object-cover scale-110"
+            priority
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
         <div className="relative z-10">
+          <Nav />
 
-        <Nav />
-        {children}
-        <Footer />
+          {children}
 
-
+          <Footer />
         </div>
-
-
-
-
-
-
       </body>
     </html>
   );
