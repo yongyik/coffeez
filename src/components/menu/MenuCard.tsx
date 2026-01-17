@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
 
 interface Props {
   src: string;

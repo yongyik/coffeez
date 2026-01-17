@@ -119,7 +119,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-amber-100 ">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-3 text-slate-100 text-sm">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md: justify-between items-center gap-3 text-slate-100 text-sm">
           <p>© {new Date().getFullYear()} 小镇咖啡屋。保留所有权利。</p>
 
           <div className="flex items-center gap-4">

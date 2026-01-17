@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface Props {
@@ -12,7 +15,15 @@ export default function TeamMember({ id, title, members }: Props) {
       <h2 className="text-4xl">{title}</h2>
       <ul>
         {members.map((m) => (
-          <li key={m.name} className="py-7 flex flex-col gap-2.5">
+          <motion.li 
+            initial={{  opacity: 0 }}
+            whileInView={{  opacity: 1 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.8 }}
+            id={id}
+            key={m.name}
+            className="py-7 flex flex-col gap-2.5"
+          >
             <Image
               src={m.src}
               alt={m.alt}
@@ -22,7 +33,7 @@ export default function TeamMember({ id, title, members }: Props) {
             />
             <h3 className="text-3xl">{m.name}</h3>
             <p className="max-w-122">{m.desc}</p>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </section>
