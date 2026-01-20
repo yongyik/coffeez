@@ -1,6 +1,6 @@
 
 
-import { Request, Response } from "express";
+import {  Response } from "express";
 import User from "../models/user";
 import { AuthRequest } from "../middlewares/auth";
 

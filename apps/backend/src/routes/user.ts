@@ -1,9 +1,5 @@
 
 
-// src/routes/user.ts
-
-
-
 import { Router } from "express";
 import { authMiddleware } from "../middlewares/auth";
 import { getCurrentUser } from "../controllers/userController";

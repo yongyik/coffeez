@@ -1,5 +1,3 @@
-
-
 import express from "express";
 import cors from "cors";
 import authRouter from "./routes/auth";
@@ -11,20 +9,18 @@ dotenv.config();
 
 const app = express();
 
-// 中间件
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN, 
-    credentials: true,               
-  })
+    origin: process.env.CLIENT_ORIGIN,
+    credentials: true,
+  }),
 );
 
 app.use(express.json());
-app.use(cookieParser());   
+app.use(cookieParser());
 
 // 路由
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
-
 
 export default app;
