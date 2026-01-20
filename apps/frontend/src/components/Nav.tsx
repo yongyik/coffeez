@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useAuth } from "@/contexts/UserContext";
 
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -13,6 +14,8 @@ export default function Nav() {
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+  const { user } = useAuth();
 
   useEffect(() => {
     const update = () => setScrolled(window.scrollY > 50);
@@ -81,11 +84,21 @@ export default function Nav() {
           <li>
             <Link href="/contact">联系</Link>
           </li>
+
+          {user ? (
+            <li className="border border-amber-50 px-1 rounded-lg text-sm bg-amber-50/20">
+              <Link href="/dashboard">{user.username}</Link>
+            </li>
+          ) : (
+            <li className="border border-amber-50 px-1 rounded-lg text-sm bg-amber-50/20">
+              <Link href="/login">登录/注册</Link>
+            </li>
+          )}
         </ul>
         <button
           ref={buttonRef}
           className="md:hidden"
-          onClick={() =>setOpen(!open)}
+          onClick={() => setOpen(!open)}
         >
           ☰
         </button>
@@ -113,6 +126,9 @@ export default function Nav() {
               </li>
               <li>
                 <Link href="/contact">联系</Link>
+              </li>
+              <li>
+                <Link href="/login">登录</Link>
               </li>
             </ul>
           </motion.nav>

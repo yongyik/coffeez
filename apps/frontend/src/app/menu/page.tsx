@@ -1,7 +1,7 @@
 "use client";
 
-import MenuCard from "@/components/menu/MenuCard";
-import { menu } from "@/data/menu";
+import MenuCard from "../../components/menu/MenuCard";
+import { menu } from "../../data/menu";
 import { motion } from "framer-motion";
 
 export default function MenuPage() {

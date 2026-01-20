@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { menu } from "@/data/menu";
+import { menu } from "../../data/menu";
 
 import "swiper/css";
 import "swiper/css/navigation";

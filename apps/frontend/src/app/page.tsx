@@ -1,6 +1,8 @@
-import Hero from "@/components/home/Hero";
-import HomeSwiper from "@/components/home/HomeSwiper";
-import ImageLinkSection from "@/components/home/ImageLinkSection";
+"use client";
+
+import Hero from "../components/home/Hero";
+import HomeSwiper from "../components/home/HomeSwiper";
+import ImageLinkSection from "../components/home/ImageLinkSection";
 
 export default function HomePage() {
   return (

@@ -1,8 +1,8 @@
-import AboutSection from "@/components/about/AboutSection";
-import Banner from "@/components/about/Banner";
-import ImageGallery from "@/components/about/ImageGallery";
-import SectionNav from "@/components/about/SectionNav";
-import TeamMember from "@/components/about/TeamMember";
+import AboutSection from "../../components/about/AboutSection";
+import Banner from "../../components/about/Banner";
+import ImageGallery from "../../components/about/ImageGallery";
+import SectionNav from "../../components/about/SectionNav";
+import TeamMember from "../../components/about/TeamMember";
 export default function AboutPage() {
   const members = [
     {
@@ -24,6 +24,9 @@ export default function AboutPage() {
       desc: "痴迷于手冲，对咖啡风味的探索近乎执着。他最喜欢和客人分享不同产区的豆子故事，把一杯咖啡变成一场小型的“味觉旅行”。",
     },
   ];
+
+
+ 
 
   return (
     <div className="text-amber-100 ">

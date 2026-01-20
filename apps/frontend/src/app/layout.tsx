@@ -1,8 +1,10 @@
-import Nav from "@/components/Nav";
+// src\app\layout.tsx
+import Nav from "../components/Nav";
 import "../styles/globals.css";
 import { ReactNode } from "react";
-import Footer from "@/components/Footer";
+import Footer from "../components/Footer";
 import Image from "next/image";
+import { AuthProvider } from "@/contexts/UserContext";
 
 export const metadata = {
   title: "My coffee",
@@ -23,14 +25,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>
-
+ <AuthProvider>
         <div className="relative z-10">
-          <Nav />
+         
+            <Nav />
 
-          {children}
+            {children}
 
-          <Footer />
-        </div>
+            <Footer />
+         
+        </div> </AuthProvider>
       </body>
     </html>
   );
